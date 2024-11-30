@@ -1,0 +1,338 @@
+Interview
+
+CAPA section
+
+setup corrective and preventive actions, to know the cause and why the issue sprung up. then i proceed to corrective actions to ensure that we prevent such from repeating. Then I will proceed to prevention to ensure I mitigate that from happening again. 
+we do Knowledge transfer sections to ensure that an expert in the team holds a meeting to educate the eng. on how to manage these systems properly to ensure it does not happen again, such sections are managed by subject matter expert.
+Uptime - the amount of time that the server, system, and apps are operational as desired. It measures the total possible time for a system to be up and reliable. A question like; is it accessible, available, reliable and what is the latency?
+
+In such a situation, we look at the response time over a certain period of time and get the aggregates over those periods of time. We ensure that there is little or no downtime. We ensure adequate optimization based on SLA.
+
+
+
+monitoring- we set up response time, to monitor an application's response time. SERVICE (SLA, SLO, SLI)
+
+VPN's
+FortiClient
+Cisco
+REMOTE ACCESS VPN = Connect virtually from any remote location
+SITE TO SITE VPN = connects different sites to a central network
+SSL VPN = Secure socket layer, create secure location within a user's device a VPN section, via authentication.
+
+I configured VPN for new users, and create a user policy. 1 step is to install the VPN software 
+2. configure the setting and attach the user credentials to the right env, ensuring the user has the proper protocol and credentials to log in.
+ 3. get the user to log in to ensure that they can connect to the created VPN using their credentials. 
+ 4. connectivity, I ensure that the user can log in and access the necessary resources to perform their daily task. 
+ 5. Install an updated version of the VPN binaries (precompile versions of the software) to provide stability and security so team members can have their systems working properly.
+
+
+What problems have you encountered in production?
+
+In the past, I had a Jnr dev eng who had configured  storage to use the host path.  At certain point we were getting alerts for data inconsistency, after several troubleshooting we realize that our database pods were down without constraint,
+
+how did will resolve it?
+We resolve it by introducing the NFS file system: we created multiple network file system clients in all the nodes and added a mount point to ensure that our data is synchronized with other files system servers to ensure that even if the system is down we can retrieve data from other remote systems.
+we also ensured that we constraint our data pod node, so that when it dies it can be recreated on the same node and not a newer node.
+Another solution was that we introduced persistent volume to ensure that we can synchronize data in a way that even if the pods die we can still retrieve our data back
+
+What problems have faced in your current project?
+
+In a current project, I worked my apps were failing, as such after a series of diagnoses using our company monitoring tools we realize that our docker file was written in SHELL format and therefore it runs as a child process when apps run as a child process.
+
+when we reviewed the dock file we discovered the error, we had to rewrite it as an executable to ensure the image able to be processed with zero latency.
+then I proceeded to schedule a meeting with my team to implement policies and educate other engineers on how to prevent this from happening again. I also created documentation on that, in which I stated the problem, solution, and the result, to ensure other engineers can review if such happens again. We use confluence as our documentation tool to ensure other engineers are able to review such documents. 
+
+What recent challenges have you faced in your organization?
+
+(In a previous year we had a situation where we constantly had rolls backs of codes due to bugs and vulnerabilities.)
+We had a situation where users had a bad experience visiting our sites. and I got tasks to ensure the problem was resolved. 
+After researching I was able to come up with a shift left security model using Sonarqube to ensure our source code is integrated with Sonarqube and rules are set to meet our company benchmarks. I did a proof of concept to ensure that when dev commits their codes sonarqube is able to pull hotspots, vulnerability, code smell, duplicate code, etc., and developers are immediately notified to check the errors emanating from their codes. And during that process, Dev was uncomfortable, because they felt it was going to cause a slow-down. I noticed only a few developers were receptive to the new concept, I had to schedule a session with that receptive dev to show them the importance of the tool and how useful it can be for them as well. And when they welcomed it we proceeded to our manager and he gave us a go-ahead to implement the tool and which was able to reduce downtime by 99%.
+
+
+I have had a situation where my load balancers could not redirect traffic to our sonarQube applications, because HTTP/HTTPS was no conf properly in the security group. I had to reconfigure it to ensure the HTTP ports were allowing inbound traffics.
+
+What is Pod?
+
+A pod is the smallest component of a k8 cluster that hosts the application.
+
+what is the diff btw a daemonset and replicaset?
+A daemonset by default creates your apps in a target node and therefore it cannot handle rollout and rollback (it does do well in zero downtime environment), a replicaset you deploy the defined amount of pods on nodes with available resources and can scale, but uses equality base selectors and ........
+
+What kind of deployment strategy did you guys implement in your surrounding?
+
+TYPES OF DEPLOYMENT
+
+1. Rolling update:
+this is the best deployment so far because you have zero downtime (it allows for a new version of apps to start running as the older ones are taken down, and it ensures the system is stable )  It allows for one or more servers to be updated at a time rather than updating them all at once.
+
+2. Fixed Deployment: 
+In this deployment you have to kill all running containers to recreate newer ones, therefore this is not the best deployment strategy.
+
+3. BLUE-GREEN deployment: 
+In this deployment, you run the old version with the new version until the new version is stable before the older one is totally taken out. These are running in two separate environments, the new ones are first run in the staging environment to ensure it is running properly with zero latency.
+
+4. Canary release:
+In this method, you replace the old subset with a new version of the application. You can subset certain users who have a lower traffic time to see their responses before a full deployment is introduced. That way their feedback can help you know if there is a need to totally implement the changes. 
+5.
+
+
+Difference btw blue-green deployment and rolling update?
+rolling saves time as it occurs simultaneously while BlueGreen you have to first stage the new version.
+Rolling allows for easy rollback of changes unlike BG where it is not easy when the older version is taken out
+BG is suitable for large-scale systems
+BG is expensive because you have to maintain to env
+
+
+Replication controller vs deployment
+
+replication controller allows you to deploy a defined amount of pods or nodes with av resources and can scale, it uses an equality base selector. it can handle rollout and rollback but does not do well in zero downtime update
+
+deployment defines the number of pods or nodes with available resources, it uses replicaset as controller within, it can handle rollout and rollback. It uses equality base selectors and can handle zero downtime scenarios. it provides a pause resume continually. It provides self-healing scalability for pods based on the definition that is set.
+
+Difference Kubectl create and kubectl apply
+create - creates an object if it is not already created, but apply performs create if the object is not created earlier and also applies to update if the object is already created (apply = create + update).
+
+
+What is the difference btw secret and configmaps? And where do you find them in K8s
+
+secrets are used to store sensitive or secret information (passwords, credentials, ssh keys, logins) with base64 while the configmaps is used to store configuration information (these are data that change without having to review the application usually stored in a variable which on can call like env. variables) that can be shared among teams.
+
+Stateful vs stateless application
+a stateless (deployment) application deploys using deployment does not keep info of the previous request, and it is easy to scale (front-end web application).
+
+ whiles a stateful application uses a stateful set, it keeps information on previous requests and has a complicated structure of the design. Stateful is difficult to scale. Mostly tied to databases like Postgres, and MariaDB. Or sometimes it could be AI devices.
+
+
+similarities: they both have pods, use load balancers, have metadata, etc.
+
+                      
+                      Interview question
+
+ how to secure your instance, network and subnet?
+use security grp and NACLE to filter access based on ip 
+configure security group to only allow known ports and address
+
+
+If you want only a single server to access your Database, what will you do?
+1. in the security group of you database only open access for the single system using CIDR block ip/32
+
+ip/32 = only allows a single ip
+
+How to use auto scaling as security?
+It serves as a back up during attack therefore providing yours users zero downtime experience, why security team works on the attacked server.
+
+AWS Shield protects againts DDOS attack and operates on layer ......
+Add content delivery network that serves as cloud front in an edge location, so that way users can't access your back end application. You can also position WAF and AWS Shield to prevent hackers from by passing the static cloudfront.
+AWS KMS helps younto create encrypted keys which allows access to your application
+AWS Secret Manager manageys your keys for you, it houses your secrets allows you to create a variable for them.
+
+what are the limitations or issues with terraform?
+It does not copy over user data properly
+it does not configuration display error properly
+Terraform takes the highest version and does not allow rollbacks
+It takes time to run terraform 
+Terraform statefiles are complicated, one can easily disrupt a system by mistakenly deleting it
+
+planning
+PI planning - team review all that was worked on during the sprint. We have a lot of team meetings and ensure we are able to collaborate effectly and efficiently. Making sure everyone is aware of what is to be required in the name phase.
+
+How to migrate data:
+
+evaluate
+do accessment 
+know what why and when
+look for the safest way to copy data
+is it phase to phase migration
+what application do you want to migrate in parallel
+what application do you want to go first and last. 
+
+
+
+On call
+during my oncall we set up monification , and i am on  a look out from alarms. Steadily visualizing metrics and ensuring it is within our benchmark. If anything escalate i try to ensure nothing exceed our severity level and we ensure it does not got below 3, we always want to keep it 3 or 4. Once it gets to two we start reviewing every system to ensure we catch errors at the early stage.
+
+Severity 
+level one is a critical level, system failures, shutdown, downtime 
+level two partial downtime, it does not immediately impact the whole sytem but might graduate to level 1
+level 3 is in between 2 and 4 it is partial system failure but wont directly impact business
+4 is the level which we notice things like patches and updates but it is not really impacting user experince per say
+5 is not really an urgent level it is the less impactful level you can review, but you do not have to jump on it ASAP
+
+Tableau or Amazon Quicksight, Pulumi
+
+newrelic - agent base monitoring, it uses an agent to scrape and gather data, it does mostly systhentic monitoring and analysis users activity
+log aggregation tool - SIEM, cloudwatch, splunk, ELK, EFK
+how to secure docker images
+
+escalate problems that you can resolve, to senior colleagues, if you think the issues is overwelming you. You ensure that you escalate it to senior colleagues. we never abandone any issue or ticket. 
+
+i was tasked to provision the networking structure of the application, what i did was provisoin the networking layer and i had to brake down the projcet that will take me through the sprint, so that way i can focus on them one after the other, start by setting up the nat gateway, vpc's, security groups, nacl's, resource groups. With that i have to do the things that are needed first in the initial sprint, so that way the priorities are done first. We also have them sometimes assigned to our to do list where we have to get them done within the set time.
+
+
+PI Planning every quater for the next sprint and task that needs to be don with the quarter. And task are estimated and assign within the sprint that engineers have to complete. Base on availability of engineers we are able to know how the task can be broken into micro-processes. And the base on the task the you are assigned. We ensure that our estimated task does not exceed a 2 weeks sprint.
+
+for jenkins pipelines i have use multibranch pipelines and jenkins-shared-library
+
+
+Jenkins jobs are the different task that has to run on the jenkins pipeline, in some cases some might require plugins and it depends on your configuration as well e.g 
+
+different ways credentials within jenkins 
+
+instance type - compute optimization, storage optimization, storage, general purpose, memory optimization. 
+
+transit gateway - configure multiple vps
+
+inter-region pairing 
+
+maximum subnet within a vpc is 200 subnets
+advantage of auto scaling : fault tolerance, availabilty and cost management.
+
+elastic cache makes is to access, store and deploy data in the cloud?
+
+internet gateway is needed for vpc pairing one should be an acceptor, while the other is receptor. You configure it to point towards the acceptor.
+
+AWS secret manager : manages , retrieve, rotates your credentials, keys and other secrets throughout their lifecycle. It replicates secret to support disaster recovery scenarios.
+
+Project with secret manager : when provisioning with terraform we can not expose our credentials, so it is important i create a secret by encoding my credentials to a variable. so that way I can call the secret module to decrypt the credentials from set environmental variable.
+
+we use it in our jenkins pipeline and Kubernetes confifuration as well.
+
+How does terraform becomes a security tool?
+
+subnet security - NACL(Network access control list)
+intance security - security group/firewall
+
+Difference between Nacl and Security group 
+what happens when you have two SG - they can functin base to the 
+what happens if you have two rules attached to a subnet - you have to specify the priorities so one rule can overide another.
+
+AWS SHIELD - protects DDOs attack of the network and transport layer (TCP/UDP)(L3/L4)
+
+ACM - it is attach to loadbalancer, it is a certificate manager that queries the autheticity of traffic
+
+AWS WAF - protects against SQL_injections on layer 7 (http)
+
+AWS System Manager - Allows for single single sign on, it traces users action within your infrastructure. Allows you to connect to your resources without using bastion host
+
+AWS - AWS Config - I an auditing and compliance tool, it allows you to set rules for your configuration within your infrastructure. It can capture rist and vulnerabilities and send you a cloudwatch notification. It detects when you services are poorly configured and read the whole configuration within the infrastructure. It alerts you on any slight change with your infrstructure than can expose you to outside attacks.
+it allows remediation action - which allows you to mitigate security risk, it also does auto-remediation.
+
+AWS Cloud Trail - it traces every action within your infrastructure, it captures users action by monitoring their navigation and exposes security risk.
+
+AWS Security Hub - It oversees every tool and ensure you infrastructure stays compliant with set policies. It reports any impropers configuration that might negate compliance.
+
+AWS Guard duty - It reads and analysis the logs within your infrastructure with algorithms and then forms a security measure. It also alerts you on any threat that your system might be expose to. It utilizes machine learning  
+
+Troubleshooting sourcecode management and deployment issues.
+Check logs
+check access
+test your connection and credentials
+Check your branch
+Check your history eg commit history
+Good comments
+Ensure the version is not depricated
+Make sure you are upto date
+
+#Hadoop, JQuery
+SEcurity:
+Os patching
+App patching
+multifactor authentication
+firewalls
+Using encrypted amazon volume and locking them with Dynamodb
+Alert system
+cloud trail
+AWS Config
+AWS Manage services
+Lock your S3 
+AWS Security hub
+System manager
+
+
+API = is an entry point for two application to communicate, it allows two way communication for request and response. The API gateway predefine if a response will be establish withing to servers, and how the server response to request. 
+
+Off-site disaster recovery:
+Have multiple Az
+setup rout53 to redirect traffic
+CDN can be used to redirect traffic
+ensure your CI/CD tools are frequently updated
+trace your logs
+utilize cloudwatch
+setup alarms
+setup resilient network architecture that it roburst and set accross AZs
+
+
+we scan our docker images using trivi before and after pulling, to detect unpatched dependencies or deprication.
+
+
+•   Remotely performed in / outbound technical support and customer service inclusive of troubleshooting and issue resolution by applying superior client relationship management to ensure apps are on and running for lending software’s.
+•   Recognized with a five-star rating for customer experience and a positive survey result for management by overcoming an aggressive customer attitude stemming from an interaction misunderstanding with a colleague, empathically listening to the complaint, creating a task to resolve the issue, and following up until achieving total customer satisfaction. 
+•   Adjusted case load for the appropriate volume by researching the best way to manage multiple projects at an accelerated pace without quality slippage and sharpening time management skills.
+•   Met Urgent deadlines, controlled the pipeline outflow, managed customers, and probed to determine client satisfaction on application support.
+•   Good knowledge of Git, nexus, SonarQube, Jenkins, docker, AWS, Groovy, swift, and Java
+
+
+As a Software Technical Support Engineer. My background includes providing superior system administration, direct sales, and customer interactions for companies including Dell Technology, Better Mortgage, and Amazon. My expertise lies in financial application support, software installation and code monitoring, information management, communication, cross functional collaboration, and strong stakeholder relationships. I am also a lifelong learner with multiple IT trainings. 
+
+
+
+HELP DESK INTERVIEW
+
+do you hv knowledge in #wiping of system off:  restart  hold f10 then go to bios -> reset pcx\
+
+Ticketing/asset management (ticket has a time to close) - Service now or slow now, for asset management to take record of asset assign to a user, when you go to sN click on the asset it pulls out the user of the asset
+
+Car/asset refresh/ Imaging - from usb stick you press f9 to boot f5rom the stick, then chose the usb
+
+ticketing- is used to assign task to a technical group, then it gets assign to me or any other user. when we are don we close. if the work is difficult i will escalate it. 
+
+Software center - is where software is being installed from, or you can go to service now to request the software which can then been pushed to software center. 
+
+I can also open a ticket on behalf of a user and assign it to myself. it goes to the ticketing queue.
+
+to unistall -> control panel -> program manager.
+
+Remote desktop : On a local Windows PC: In the search box on the taskbar, i"ll type Remote Desktop Connection, and then select Remote Desktop Connection. In Remote Desktop Connection, i"ll type the name of the PC you want to connect to (from Step 1), and then select Connect.
+
+conferencing --> teams, skype, zoom
+
+ticketing --> Jira or salesforce(dell embended)
+
+imaging ---> on start hold f9 --> troubleshoot --> advance option ---> system image recovery
+
+wiping/rest --> on starting hold f10 ---> advance option-->troubleshoot---> reset this PC
+
+IPcONFIG - use to view TCP/IP configuration i n windows
+ipconfig/all -- use to view all informatin about network adapters including DHCP and dns
+ipconfig/release -- to release current ip address and renew to reassign new ip
+ipconfig/displaydns - allows you to view cashed dns servers 
+ipconfig/flushdns -- to wipe out those servers
+tracert--- use to lay full part taken frm host to a destination network. helps in troubleshoting if you cannot ping a server
+ARP - is address resolution protocol use to manage arp carched
+pING - is use to chwck connnectivity between network devices.
+NSlookup - is use to troubleshoot dns issues
+
+CONTROL PANEL -> Program anf features 
+                      Task manager
+                      
+                      Domain
+      A domain is a collection of object sharing thesame active directory database.       A TREE is a collection of Domain
+
+                    Domain Controller
+ is a centralised location for user account, computers, security features which are part of the Databse contolle by the DC
+
+to be able to configure a domain controller you need to add a role, click add role and feature to pull up the wizard from the server manager -> the feature to add will be Active directory and domain services feature.  once this is done you proceed back to TOOLS on server manager and choose ACTIVE DIRECTORY Domain services. Then you can set the DC computer to log in with domain admin right, then i can promote the DC server to Domain controller by adding a new forest.
+                     
+
+                     ACTIVE DIRECTORY
+   ACtive directory is a service in windows OS that is used to manage users and computer authentication within a domain. It enforces security policies and install software to computers conected to that domain.                  
+
+                    Ogarnizational Unit
+        is a container in the AD Domain that can contain different object of same ID domain.
+
+                     AD OU 
+     is an administrative unit within a domain on which administraors can link group policy object and assign permissions to other usres and groups.
+
+                   GROUP POLICY
+
+        is an ACTIVE DIRECTOry policy that provides centralized place for admins to manage and configure Operating systems, applications and users           
