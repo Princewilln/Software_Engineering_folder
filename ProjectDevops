@@ -1,0 +1,10 @@
+Prometheus
+
+node exporter
+prometheus server (http) = it is scrapes and stores time series data
+alert manager
+promQl = a query language 
+push gate way = for supporting short-lived jobs
+alertmanager = handles alert
+
+deployed as deamon set
