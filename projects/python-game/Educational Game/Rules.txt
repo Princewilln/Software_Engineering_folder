@@ -1,0 +1,15 @@
+Welcome to the World Adventure Quest!
+    
+    Rules:
+    1. Answer the questions correctly to progress through the levels.
+    2. You only get a max of three lives. Incorrect answers will decrease your lives.
+    3. Gain an extra life by answering two out of three questions correctly in each level.
+    
+    How to Play:
+    1. Read the story passage for each level.
+    2. Answer the multiple-choice questions by entering the corresponding number.
+    3. Continue until you complete all five levels or run out of lives.
+    
+    Have fun playing!
+
+    And now, the most important question of them all: 

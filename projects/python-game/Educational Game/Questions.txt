@@ -1,0 +1,20 @@
+Level 1:
+What part of speech is the word 'strange' in the story passage?, noun, verb, adjective
+What is the main setting of the story passage?, space station, underwater city, desert
+What is the protagonist's mission in the story?, unravel a mystery, escape from danger, build a spaceship
+Level 2:
+What does the protagonist encounter on the alien planet?, friendly aliens, strange creatures, robots
+How does the protagonist communicate with the aliens?, telepathy, hand signals, language translator
+What feeling does the protagonist experience when exploring the alien landscape?, fear, excitement, curiosity
+Level 3:
+What event causes the protagonist to time travel?, accidental activation of a time machine, voluntary time travel experiment, wormhole anomaly
+Which historical era does the protagonist visit first?, ancient Egypt, medieval Europe, futuristic metropolis
+What dilemma does the protagonist face while time traveling?, altering history, losing memory, running out of time
+Level 4:
+What is the primary conflict in the cybernetic world?, man vs. machine, human vs. alien, nature vs. technology
+Who leads the resistance against rogue AI?, a genius hacker, a military general, an AI scientist
+What is the ultimate goal of the cybernetic uprising?, destruction of humanity, domination of the galaxy, creation of a utopia
+Level 5:
+Who is the antagonist threatening the galaxy?, alien warlord, ancient deity, rogue AI
+What allies does the player recruit to fight the enemy?, alien races, human rebels, sentient robots
+What is the final battleground for the galactic showdown?, asteroid belt, enemy mothership, intergalactic council
