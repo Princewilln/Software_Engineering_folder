@@ -1,0 +1,1279 @@
+DEVOPS
+DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.
+     
+       Decide when to use greenfield and brownfield projects
+
+A common misconception is that DevOps is only for greenfield projects and suits startups best. However, DevOps can also succeed with brownfield projects.
+A greenfield project is one done on a green field, undeveloped land. A brownfield project is done on the used ground for other purposes.
+
+Because of the land use that has once occurred, there could be challenges reusing the land. Like existing buildings, some would be obvious but less obvious, like polluted soil.
+
+
+    Decide when to use systems of record versus systems of engagement
+
+When selecting systems as candidates for starting a DevOps transformation, it is necessary to consider the types of systems that you operate.
+
+Some researchers suggest that organizations often use Bimodal IT, a practice of managing two separate, coherent modes of IT delivery - one focused on stability and predictability and the other on agility.
+
+
+Systems of record
+Systems that provide the truth about data elements are often-called systems of record. These systems have historically evolved slowly and carefully. For example, it is crucial that a banking system accurately reflects your bank balance. Systems of record emphasize accuracy and security.
+
+Systems of engagement
+Many organizations have other systems that are more exploratory. These often use experimentation to solve new problems. Systems of engagement are modified regularly. Usually, it is a priority to make quick changes over ensuring that the changes are correct.
+
+There is a perception that DevOps suits systems of engagement more than systems of record. The lessons from high-performing companies show that is not the case.
+
+Sometimes, the criticality of doing things right with a system of record is an excuse for not implementing DevOps practices.
+
+Worse, given the way that applications are interconnected, an issue in a system of engagement might end up causing a problem in a system of record anyway.
+
+Both types of systems are great. At the same time, it might be easier to start with a system of engagement when first beginning a DevOps Transformation.
+
+DevOps practices apply to both types of systems. The most significant outcomes often come from transforming systems of record.
+
+Identify groups to minimize initial resistance
+Completed
+
+2 minutes
+
+Not all staff members within an organization will be receptive to the change required for a DevOps transformation.
+
+In discussions around continuous delivery, we usually categorize users into three general buckets:
+
+Canary users voluntarily test bleeding edge features as soon as they're available.
+Early adopters who voluntarily preview releases, considered more refined than the code that exposes canary users.
+Users who consume the products after passing through canary and early adopters.
+It's essential to find staff members keen to see new features as soon as they're available and highly tolerant of issues when choosing Canary.
+
+Early adopters have similar characteristics to the Canaries. They often have work requirements that make them less tolerant of issues and interruptions to work.
+
+While development and IT operations staff might generally be less conservative than users.
+
+The staff will also range from traditional to early adopters, and others happy to work at the innovative edge.
+
+    Identify project metrics and key performance indicators (KPIs)
+                     Completed
+
+3 minutes
+
+We spoke earlier about the importance of shared goals. It was also agreed upon by team members that the goals needed to be specific, measurable, and time-bound.
+
+It is essential to establish (and agree upon) appropriate metrics and Key Performance Indicators (KPIs) to ensure these goals are measurable.
+
+While there is no specific list of metrics and KPIs that apply to all DevOps Projects, the following are commonly used:
+
+Faster outcomes
+Deployment Frequency. Increasing the frequency of deployments is often a critical driver in DevOps Projects.
+Deployment Speed. It is necessary to reduce the time that they take.
+Deployment Size. How many features, stories, and bug fixes are being deployed each time?
+Lead Time. How long does it take from the creation of a work item until it is completed?
+
+Efficiency
+Server to Admin Ratio. Are the projects reducing the number of administrators required for a given number of servers?
+Staff Member to Customers Ratio. Is it possible for fewer staff members to serve a given number of customers?
+Application Usage. How busy is the application?
+Application Performance. Is the application performance improving or dropping? (Based upon application metrics)?
+
+Quality and security
+Deployment failure rates. How often do deployments (or applications) fail?
+Application failure rates. How often do application failures occur, such as configuration failures, performance timeouts, and so on?
+Mean time to recover. How quickly can you recover from a failure?
+Bug report rates. You do not want customers finding bugs in your code. Is the amount they are seeing increasing or lowering?
+Test pass rates. How well is your automated testing working?
+Defect escape rate. What percentage of defects are being found in production?
+Availability. What percentage of time is the application truly available for customers?
+Service level agreement achievement. Are you meeting your service level agreements (SLAs)?
+Mean time to detection. If there is a failure, how long does it take for it to be detected?
+
+Culture
+Employee morale. Are employees happy with the transformation and where the organization is heading? Are they still willing to respond to further changes? This metric can be challenging to measure but is often done by periodic, anonymous employee surveys.
+Retention rates. Is the organization losing staff?
+
+              Note
+It is crucial to choose metrics that focus on specific business outcomes and achieve a return on investment and increased business value.
+
+
+When you use DevOps :
+
+You shorten your cycle time by working in smaller batches.
+Using more automation.
+Hardening your release pipeline.
+Improving your telemetry.
+Deploying more frequently.
+
+Continuous Integration drives the ongoing merging and testing of code, leading to an early finding of defects. Other benefits include less time wasted fighting merge issues and rapid feedback for development teams.
+Build succeeded. Completed.
+
+Continuous Delivery of software solutions to production and testing environments helps organizations quickly fix bugs and respond to ever-changing business requirements.
+Continuous Delivery of software solutions to production and testing environments and phases image.
+
+Version Control, usually with a Git-based Repository, enables teams worldwide to communicate effectively during daily development activities. Also, integrate with software development tools for monitoring activities such as deployments.
+Master, feature 1, and feature 2 branches representation.
+
+Use Agile planning and lean project management techniques to:
+Plan and isolate work into sprints.
+Manage team capacity and help teams quickly adapt to changing business needs.
+A DevOps Definition of Done is working software collecting telemetry against the intended business goals.
+Kanban board with columns to-do, in progress, ready to code, in progress, ready, in progress, review, and done.
+
+Monitoring and Logging of running applications. Including production environments for application health and customer usage. It helps organizations create a hypothesis and quickly validate or disprove strategies. Rich data is captured and stored in various logging formats.
+Charts example.
+
+Public and Hybrid Clouds have made the impossible easy. The cloud has removed traditional bottlenecks and helped commoditize Infrastructure. You can use Infrastructure as a Service (IaaS) to lift and shift your existing apps or Platform as a Service (PaaS) to gain unprecedented productivity. The cloud gives you a data center without limits.
+Public cloud.
+
+Infrastructure as Code (IaC): Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms.
+Infrastructure as Code (IaC) representation.
+
+Use Microservices architecture to isolate business use cases into small reusable services that communicate via interface contracts. This architecture enables scalability and efficiency.
+Monolithic and microservices representation.
+
+Containers are the next evolution in virtualization. They're much more lightweight than virtual machines, allow much faster hydration, and easily configure files.
+Containers.
+
+1. Which of the following choices best describes DevOps?
+
+DevOps is the role of who manages source control, pipelines, and monitor environments to continue delivering value to the software project.
+
+DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.
+Correct. According to Donovan Brown, "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.
+
+
+DevOps is the new process of creating continuous delivery and continuous integration for software projects.
+
+2. Which of the following choices drives the ongoing merging and testing of code that leads to finding defects early?
+
+Continuous Integration.
+Correct. Continuous Integration drives the ongoing merging and testing of code, which leads to finding defects early.
+
+
+Continuous Delivery.
+
+Continuous Feedback.
+
+3. Which of the following choices is a practice that enables the automated creation of environments?
+
+Infrastructure as a Service (IaaS).
+
+Infrastructure as Code (IaC).
+Correct. Infrastructure as Code (IaC) is a practice that enables the automation and validation of the creation and teardown of environments to help with delivering secure and stable application hosting platforms.
+
+
+Software as a Service (SaaS).
+
+
+What does Azure DevOps provide?
+Azure DevOps includes a range of services covering the complete development life cycle.
+
+Azure Boards: agile planning, work item tracking, visualization, and reporting tool.
+Azure Pipelines: a language, platform, and cloud-agnostic CI/CD platform-supporting containers or Kubernetes.
+Azure Repos: provides cloud-hosted private git repos.
+Azure Artifacts: provides integrated package management with support for Maven, npm, Python, and NuGet package feeds from public or private sources.
+Azure Test Plans: provides an integrated planned and exploratory testing solution.
+Also, you can use Azure DevOps to orchestrate third-party tools.
+
+
+Explore best practices for source control
+
+2 minutes
+Make small changes. In other words, commit early and commit often. Be careful not to commit any unfinished work that could break the build.
+Do not commit personal files. It could include application settings or SSH keys. Often personal files are committed accidentally but cause problems later when other team members work on the same code.
+Update often and right before pushing to avoid merge conflicts.
+Verify your code change before pushing it to a repository; ensure it compiles and tests are passing.
+Pay close attention to commit messages, as it will tell you why a change was made. Consider committing messages as a mini form of documentation for the change.
+Link code changes to work items. It will concretely link what was created to why it was created—or modified by providing traceability across requirements and code changes.
+No matter your background or preferences, be a team player and follow agreed conventions and workflows. Consistency is essential and helps ensure quality, making it easier for team members to pick up where you left off, review your code, debug, and so on.
+Using version control of some kind is necessary for any organization, and following the guidelines can help developers avoid needless time spent fixing errors and mistakes.
+
+
+
+
+
+Task of an OS
+ A- Resource allocation and management
+
+ 1-Process management (CPU Utilization)- this is basically managing CPU resources. 
+ what is a process? - small unit that executes on the computer, each process has its own allocated space. If a computer has one cpu it only execute 1 process at a time. 
+ CPU switches so fast that you can notice the actions it undergoes. If a computer has multiple CPU's (dual-core, quad-core) it make the computer more fast with more CPU's.
+
+ 2. Memomory management - it jobs is to allocate working memory. Every application need some memory to work. Ram (rapid access Memory) is limited in each computer. The more applicastion you open the more youir memory is consumed. But some OS have Memory Swapping -- It helps allocate new memory to new appliocation, it helps make one app inactive while the new ones start running and get the resources.
+
+ 3.Storage Management - we need storage to save data, Storage management is really important in order to save your files. Use 50% maximum in order to have your OS function properly. It is important to understand how to debug memory shortage, or OS slow down.
+
+ B- Manage File System - storing files in a structured way, In Unix Systems (linux, Mac OS) has 3 file system and only 1 root folder, but windows do have multiple root folders like C, D and E drives.
+
+ C - Management of I/O devices - OS Knows how to handle and translate instructions between apps and devices. 
+
+ D - Security and Networking - Security involves managing users and permissions. Giving each user their own space and persmissions.
+ Networking: you need to know how to block/restrict ports and IP addresses.
+
+ Operating System Component: Every OS has a Kernel, Kernel is like the heart of an OS, every OS. Kernel manages the communication between the Hardware devices and the OS. Kernel manges the Driver that allows the Hardware to interact with the applications. 
+
+ OS Component  - First we have the Application layer <- Operating syteme(kernel) -> hardware
+ Kernel start the process of app, its allocates resources to the app, it cleans up when the app shutsdown 
+ kernel is a program that consist of device drivers, files system.
+
+ We have different Linux distrubutions - ubuntu, mint, centos, red hat etc, they all have different application layers and user interface. But they all are based on linux kernel.
+ Mac and iOS is based on Darwin Kernel
+
+ We will use OS for servers: Ususally based on Linux, 75% of server are based on Linux, it is more light-weight and performance, no GUI or other user applications.
+
+ Linux for Devops:  mostly used OS for servers  are linux (linux is a must for Devops Engineeer) we need to work with servers, we will install and configure servers.
+
+ LINUX COMMANDS
+ pwd - shows working directory
+ ls - shows or list all files and folders
+ mkdir - used to create a directory
+ cd - is used to change directory
+ touch - used to make a file
+ uptime -
+ lsblk -
+ top - shows actual running processes, and what process is consuming more memory.It is use to troubleshoot system instability
+ free -m - checking your memory
+ free -k - checking your memory in kilobyte
+ free -g - checking your memory in gigabyte
+ cat /etc/*release -
+ cat /proc/meminfo 
+ lscpu - 
+ ls -l : list all your files and directory
+ makdir -p test1/test2/test3 - it is use to cascade directories into parent directories
+ cd ~ : takes you back to your user home
+ cd / : takes you back to root
+ mkdir -pv - create multiple directory into a parent directory and print the steps for you.
+ cat - cat is use to print the content of a file
+ mkdir -p : allows you to cascade your directories
+ mkdir -pv : allows you to cascade nd print
+ cp - allows you to copy file
+ mv - allows you to change the name of directory and files
+ rm - allows you to delete a file
+ rm -r : allows you to delete a directory
+ ls - allows you ro list item in your directory
+ ls -a : allows you to lis all files including hidden files
+ ll - arranges your files and directory in  format for you to see more information
+ Man - gives you more detail information and flags you can use with a command
+ ls -li : gives you more information like the inode, number of links, owner, group, time, date and permission of a file
+ ls t* list all the files starting with t
+ ls *1 list all the files ending with one
+ ls *txt: list all the file ending with txt
+ cd - : takes you back to a directory you were last on
+ FILE EDITTING COMMAND -
+ Vim and vi are used to edit files
+ vi plus file name creates a file and go into the edit mode, Vim has to be installed as a package. 
+ ESC :wq ------ to save a file and exit
+ ESC HOLD SHIFT + zz ---to save and exit
+ ESC :q! -----to quit without saving
+ cat student >> student2 - will copy all the script in student to student2
+ shift + A : takes you to the end of the line.
+ shift + O : allows you to create a line above the cursor
+  o : allows you to add a line below the cursor
+  u : undo the last: operation
+  e : moves you to the end of each word
+  ( : takes you to the beginning of the paragragh
+  ) : takes you to the end of a paragragh
+  [[ : takes you vertically to the top of the paragragh
+  ]] : takes you vertically to the end of the document.
+  :x - to exit and save 
+  r - replaces a character
+  gg - takes you to the top of your document
+  G - takes you to the buttom first word of your document
+  x : delete
+  /  : to search a word or string in your document
+  n : helps move you through word search) after using / to search that word
+
+
+
+ USER DIRECTORY STRUCTURE
+ USERS AND GROUPS
+ echo '' I am a future student engineer'' student : this creates a file student and write "i am a future devops engineer in it"
+
+ grep - is used to search for words in a document e.g grep devops student, Will print all the words devops in a file student
+ grep -i -R word /etc/*  : -i removes the case sensitivity, -R searches for the word in every child folder
+
+ cat student | grep and : will search for every "and" in the file student.
+
+ less - it is used to print information in a document, but it doesn't print out everything like Cat will
+
+ More - is  like less command with little differences, it doesn't let you navigate it with the arrow key but you have to use the enter key, it also shows files in percentage.
+
+ head - prints the first ten lines in s file by default
+
+ head - 20 student : will print the first 20 lines in a file named student
+
+ Tail - prints the last ten lines in a file
+ tail -5 student : will print the last five lines of the file
+
+ cut - cuts part of the information in a file, seperates them usiing delimeter
+
+ curb -d: -f1 /etc/passwd: d is for delimeter it seperates colons, f1 stands for the 1st colon, f2 will stand for the 2nd colon
+
+ awk - stands for Aho,Weinberger, and kernighane use to filter words, using seperators.
+
+ awk -F ':' '{print $1}' /etc/passwd :operates as the cut above 
+
+ var/log - shows you information about your system, usually under the syslog
+
+ tail -f : helps you watch changes in your system. like your logs (logs are information about your system, they are pointers to issues you want to troubleshoot in your server)
+
+ sed - reads one line at a time, it is stream editor, it helps perform search and replace
+
+ search and replace in vim : e.g %s/devops/developer/g - will look for the word devops and replace it with developer
+
+ sed -i 's/developer/devops/g' student : will search and replace all the words developer to devops in a file student
+ s
+ sed -i 's/devloper/devops/g' * : the * helps change the words in the whole directory
+
+ :se nu - gives you a line number in vim or vi
+
+ USERS and GROUPS
+
+users and groups are used to regulate accessto files and resources
+users log in to the system by providing their username and password
+
+       TYPES OF USERS/GROUPS
+
+the  super user/root user 
+(sudo -i or su) has all priviledgea and can do anything within the server, it is the most powerful user. sudo - super user do. Root user has an ID of Zero and a group ID zero cat /etc/passwd
+the   Normal users - is an ordinary user that does not have root previleges. has only noprmal privileges like read and write access tail /etc/passwd
+the   system users - this user can not be tampered because it is system defined, the are created by the software or application during installation
+
+su - princewill :is used to switch to a user princewill
+
+when you create a user in linux a unique user and group ID is assign to every user created.
+  
+Users is use to manage resources in variuos department of the organization
+users are use to controls access base on responsibility
+
+useradd(redhat/centos) - this is a command use to create users in linux ( useradd -m -s /bin/bash prince) will create a user prince. or just user prince
+adduser (ubuntu/debean) prince also will create a user prince and print the user id and group
+
+To create a password after a user is created use (passwd prince) 
+
+id prince will show the id
+
+group prince will show the group
+
+groupadd warehouse- is use to add group warehouse
+
+cat /etc/group will list your groups
+you can add a single user to two groups using (useradd prince -c "prince nonso" -g warehouse -G Management -u 44444) -c is for comment,  -g is a primary group gid, -G is a secondary group groups, -u 44444 is the user ID
+
+To modify a user use (usermod prince -c "prince nonso" -g warehouse -G Management -u 44444) will modify an existing user and add him to the two groups and assign him a user ID
+
+shadow - this is where your passwords are stored (cat /etc/shadow takes you there)
+
+userdel prince - will delete a user prince
+deluser:  will delete a user and its home directory
+
+userdel -r prince - will delete prince and its directory
+cat /etc/passwd will let you see id and groups
+groupadd -m  -s /bin/bash Goodlife , where gooflife is a new group . -m tells it to create it to the home directory, -s create the shell. 
+
+to add users that are created to the group Goodlife 
+usermod -g Goodlife doctor : will add the user/group doctor to goodlife
+You can give users different permission, such as read( can only read but cannot write and edit), write (this users can read and write on a file or directory that they have access to) and execute (means the can runs task)
+no permission : the user can't do nothing - 0
+Executable and write permission - 1
+read and executable permission  - 5
+read and write permission        - 6
+read, write and excutable permissions - 7
+
+usermod -a nurse -G Manager, will append the user nurse, this mean adding it to a new group Manager while it retain its previous group.
+
+gpasswd -d [USER NAME] [GROUP NMAE]: to remove users from groups
+
+ls -l shows  user permissions on a file or directory.  drwxrwxr-x
+
+u- users
+g - groups
+o - other users
+
+the first letter tells if it is a file or dirctory, the next 3 shows the user permission, followed by the group permission
+
+sudo chmod o+w student, will allow other users to have write permision on a file student
+sudo chmod o-w student, will remove other users  from having write permission on the file student
+
+sudo chmod u-w student, will prevent the user from having write permission. you can cahnge the w to r or x to minus read or excution permission
+
+r - 4
+w - 2
+x - 1
+
+r-w = 4+0+2 = 6
+
+sudo chmod 660 student - will grant user and group read and write permission but no permision to other users.
+
+sudo chgrp is used to change group
+sudo chgrp management student : will change group for student to management
+
+sudo chown is use to change owner of a file
+sudo chown 
+sticky bit = temp directory
+
+chmod +x student : will add execute permission to users, group and other users on a file student.
+chmod -r student : will minus read permission from users, group and other users on a file student.
+
+chmod u+r student: will give read permission to user only.
+
+chmod g-x student: will take away execute permission from the group only.
+
+SET PERMISSIOM = set the permission and override the permission set earlier
+chmod  g=--- student : will overide and subtract the read, write and execute permission from group
+chmod g=rwx student will overide and give read, write and execute permission.
+chmod a=--- student: will overide and subtract the read, write and execute permission from user,group and other users
+
+read = 4
+write = 2
+execute = 1
+no permission = 0
+write + execute = 3
+read + execute = 5
+read + write = 6
+read + write + execute = 7
+
+chmod 777 student: will grant all permission to a file student.
+ubuntu@ip-172-31-50-73:~$ sudo usermod -aG docker $USER student: will give all permission to the user only.
+
+SUDO
+sudo gives power to a normal user to perform command which is preserve for the root user
+
+visudo is used to add user to the sudoer group.
+
+cat /etc/*release or cat /etec/os-release
+apt install vim: is used to intall a package vim
+sudo apt search Apache: is used to search if Apache is intalled in your server
+sudo apt remove vim : will be use to delete vim
+sudo apt update will update your package
+
+apt list --upgradable: will show you group of packages that vcan be upgraded
+
+sudo apt upgrade: will upgrade all packages that needs upgrade and this is not a good practice due to version compatibility issues
+
+PROCESS MANAGEMENT
+ps is used to show what process is running
+ps -f gives you additional infromation of the process thast are running and tells you what user it is running from, the parent ID (PID)
+Top: is a good command to check processes, cpu and memory utilization
+kill -9 [process Id] will help stop a process.
+Daemons: are system related backgroud process 
+ps -ef : will show background processes
+
+ARCHIVING: 
+zip -r all_file.zip student text.txt file1 : will add student text.txt file1 to a zip flie all_file.zip
+
+mv all_file.zip zip: will move the files to zip, it is good to move it into a new directory, cd in the directory to then unzip the zipped file.
+
+you need to install unzip to unzip filess
+ 
+ unzip all_file.zip: will unzip the zipped files
+
+ Introduction to shell/Bash scripting
+ create user
+ groupadd devops
+ mkdir project
+ touch file.txt
+ chmod 750 file.txt
+ sudo apt install docker
+ docker run
+ 
+ it is not best practice to keep running command one by one in different servers. and that is where shel/bash scripting comes in play.
+
+ Advantage 
+ > Avoid repetitive work 
+ > keep history of configuration
+ > share the instructions
+ > Logic and bulk operations
+
+ bash scripting - you write all commands in a file, and then execute the file, which helps you avoid repetive work and svaes time, the file is movable to other servers. and the file is called a shell script
+ bash/shell script always have a .sh extension. 
+
+ Shell = is a program that interpretes and execute the various commands that will type in the terminal. It tarnslate our command that to a language an OS can understand and execute.
+ sh (bourne shell) - /bin/sh usually the default shell. But now 
+
+ bash (Bpurne again shell) -/bin/bash is the newer version of sh 
+ Bash is a default progran for linux like systems.
+
+ shell and bash term are used interchangeably 
+
+ Shebang - helps tell the operating system what extension you are using between 
+ SH,       BASH,         ZSH
+#!/bin/sh   #!/bin/bash   #!/bin/zsh
+
+why is it called shebang
+> because of the first 2 character "#!"
+ # = in musical notation also call sharp
+
+
+
+./setup.sh or bash setupt.sh = will execute the file setup.sh
+if you lack execution permission on a file you won't be able to execute that file or bash script.
+
+Variable: is it use to store date that can be reference later. use $ symbol anytime you use a variable.
+
+$(ls config) = # sign and bracket/paranthesis in bash scripting means we are saving the value of a linux file
+
+conditionals = state true or false of a statement. it allows you to alter the control flow of the program, and then execute the comman only when certain condition is true.
+
+if means either one block execute if its true or execute the next if not.
+
+ operator                          description
+-eq                    checks if the value of 
+                       two operands are equal, then becomes true
+
+-ne  checks if the vslue of two operands are equal or not, if values are not equal, the the condition becomes true
+-gt
+-lt
+-ge
+-le
+
+string operation:
+=
+!=
+-z
+-n
+str
+
+man test = shows you all your operators
+
+elif - is use to add multiple condition
+
+positional Parameters 
+
+ > are used 
+ $1 is a parameter that allow you to pass variable and the maximum is $9, $9 is the maximum you can use in a bash script)
+
+USER INPUT
+
+ read -p "enter your name" - allows you enter a name
+
+ $* - this display all parameters
+ $# - display all the number of parameters you entered
+
+ LOOPS
+ loop enable you to execute a set of commands repeatedly
+ TYPES OF LOOPS
+ > FOR loop - operates on list of items  b.) repeat set of commands for all item in the list
+ > WHILE LOOP - execute a set of command repeatedly until some condition is me
+
+FUNCTIONS
+> functions enable you to braek down the overall functionality of a script into logical code blocks
+> this code block can be reference in the script multiple time
+
+BOOLEAN
+> A datatypr that can have only two value
+>True or Force
+> Boolean is by default a false, if you don't specify it choose the false value.
+
+useradd -m prince -g Engineer = will add a new user prince to an existing group Engineer
+
+sudo chown nonomi text.txt 
+= will change the owner of text.txt to nonomi, but you have to posses a sudoer power to do that.
+sudo chgrp Nurse text.txt will change the group of the file text.txt to Nurse 
+
+you have to be in root to make a user a pseudoer and use visudo command to log in
+
+
+ssh-keygen = creates an ssh key for you (public and private)
+use ls -a to confirm you have the keypair created, us cd .ssh to enter into .ssh , with ls you can see your private and public key.
+
+git clone = is used to copy a file to your local system.
+git status = is use to see which file is not added to git staging.
+git add = is used to add files to git staging area
+git add . = adds all the files to git staging area.
+git commit = is used to move files to the git repository from the git state
+git commit -m "bla bla bla"
+git push = is used to push a file from remote repository to local repository
+git init, creates a git folder in a directory
+
+Command line instructions
+You can also upload existing files from your computer using the instructions below.
+
+Git global setup
+
+git config --global user.name "Princewill Nwokeke"
+git config --global user.email "prinzy101@gmail.com"
+Create a new repository
+git clone git@gitlab.com:Princewil/jenkins-shared-library.git
+
+cd jenkins-shared-library
+git switch -c main
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin main
+Push an existing folder
+
+cd existing_folder
+git init --initial-branch=main
+git remote add origin git@gitlab.com:Princewil/jenkins-shared-library.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+Push an existing Git repository
+
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin git@gitlab.com:Princewil/jenkins-shared-library.git
+git push -u origin --all
+git push -u origin --tags
+
+ git remote add Nonso https://github.com/Princewilln/second-project.git = creates an alias for the url to Nonso
+ git pull = (git fetch + git merge)shows you available branche
+ git checkout branch name - takes you into a branch
+ git checkout -b <branch name> creates a new branch
+ then git branch shows the newly created branch
+ git branch -d <branch name> deletes a branch
+ git pull -r = does a fetch without merge commit
+ .gitignore = is used to ignore files from going to your remote repository
+ rm -rf .git = removes the git repository
+ git remote add origin https
+
+ Maven - 
+
+ compiling and packaging = building
+ compiling = is converting human readable language to machine readable language
+ packaging is packing up the dependencies needed for software to run e.g java.jar/.war or windows.exe/.msi or mavin.tar.gz/.zip
+ dependencies are external file that code or system needs to run
+ source code = code used to write an application
+
+ Types of buld tools:
+
+ -Apache maven = is used to build an application , it was derived from a Yiddish word meaning accumulator of knowledge. Apache Maven is a software project management and comprehension tool
+
+ In maven we work with pom files. it is an XML file that contains configuration and information about our project, such as groupID
+ -Gradle
+ -Ant
+ -NPM & Yarn - mostly a node package manager, it does not compile
+ sudo apt search java - shows you java apss
+ sudo apt install openjdk-8-jdk/openjdk-11-jdk = installs java
+ sudo apt update = updates your system
+
+ Maven lifecycle
+  -prepare resources
+  - validate
+  -compile
+  -Test (unit test/intergration test) = this where we look out for bugs after the computer has understand the language
+  -package = means putting it in a file like .zip
+   -install = We install all dependencies our application needs to run
+   - Deploy = where we put it into some server
+   note: while using maven you can not skip the format of any lifecycle, it moves from A - Z
+   make sure it has the pom.xml file that carries all the dependencies that codes need to run
+   fork repository = it lets you use someone elses repository
+   profiles= are use to alter mavin default behavior
+   from maven you deploy your code to nexus
+
+   (interview) what project have you done? (onboarding) i created/selected a team , create a repository in git, invite team members, give them access, to ensure you follow best practice and make sure proper branching is done , and devops engineer only work on their branches (we push the codes from the master branch to the dev branch, to make sure engineers dont work directly on the master branch and when they are don the codes are pushed to the dev branch through pull or merge request and the codes are reviewed before they are merge into the master branch).
+
+   Maven is a build tool the compiles code and test their dependencies , after compiling it validates them before it converts them into an artifacts, then it can be store remotely in sonatype nexus. Nexus is more like a storage for the artifacts
+
+   
+   Artifactory Repository = (port 8081)Nexus Repository Manager
+   Nexus is an open source repository manager that allows to store and retrrieve build artifacts. Nexus helps us build private repositories
+   Repositories are store
+
+   monolitic &
+   micro services application
+   most companies now uses microservices because it runs faster and provides multiple back ends
+   Tomcat - 
+
+   <--
+
+   #!/bin/bash
+# TOMCAT.SH
+# This script will install tomcat9 on rhel7&8
+sudo yum install java-1.8.0-openjdk-devel -y
+cd /opt 
+sudo yum install git wget -y
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz
+sudo tar -xvf apache-tomcat-9.0.65.tar.gz
+sudo rm -rf apache-tomcat-9.0.65.tar.gz
+sudo mv apache-tomcat-9.0.65 tomcat9
+sudo chmod 777 -R /opt/tomcat9
+sudo sh /opt/tomcat9/bin/startup.sh
+# create a soft link to start and stop tomcat
+sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
+sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
+sudo starttomcat
+-->
+
+<---
+https://github.com/devopshydclub/vprofile-project/blob/ci-jenkins/userdata/nexus-setup.sh
+-->
+
+<---
+http://ec2-3-83-90-12.compute-1.amazonaws.com:8080/
+--->
+<--
+find / -name context.xml
+-->
+
+Interview - Ones a developer pushes a code, the three things that must be pushed along in that repo, they include: built script =  which comes inside pom file, source code and test cases)
+
+mvn validate, checks for dependencies that the code needs for compilation
+mvn compile downloads the dependencies that were validated and convert the code from human readable language to machine readable language, and creates a target directory.
+mvn test - runs the test and comfirm all the languages are intact
+mvn package - zips the the codes into an archive and creates a .war file and an additional maven-archiver directory
+mvn clean - cleans the directory and eliminates the target directory, which allows you to re-run the maven commands.
+
+edit ssh/passwd permission =  sudo vim /etc/ssh/sshd_config - the directory to edit password file
+
+watch ls - to watch activity in a directory
+
+sudo hostname <name of host> - to change name of server.
+
+sudo systemctl restart sshd
+
+when an app is build an artifact is generated, it takes the built file and package it into a single file.- Nexus is an artifactory manager.
+
+proxy repo - is a copy of another repo, mostly the central repository
+
+hosted repo -
+scp command was use to push codes from mavens to tomcat
+
+
+Sonarqube 9.3
+It is a code quality/analytic tools - it checks for errors in a code, analyze and helps give clue on how to fix a code. Architecture and Design, Unit test, Duplicate code, Potential bugs, complex code and coding standard.
+code quality = code quality is simply how safe,reliable,secure and efficient our code is.
+factors : 
+code does what it was design to do
+follo a consistent style
+it must be easy to understand - state good comments
+easy to test (dynamic testing-performing a test at run time, static code analysis-involves checking for potential errors and poor coding practices )
+
+
+code quality and code review - checking for errors,bugs and vulnerability, it involves thorough examination to ensure the code has no issues. code review is the most commonly sed procedure for validating the design and implementation of features.
+Types of review = 
+a.Peer review - it is mainly focused on funtionality design amnd the implementations and usefulness of proposed fixes for stated  
+b.External review
+
+
+
+static code analysis
+
+code smell - is an indicator that something about your code is not coming up right, it detects something that might be an issue even if the code runs.
+
+Technical Debt - It is the duration it takes to refix a code issue
+
+code coverage - it determines the amount of the total code that have been tested, it is white box testing which finds the areas of the program not execised by a set of test case
+
+test coverage-
+
+Quality gate  - this are threshold measures set on your project,  qulity gatee is the best way to enforce a quality policy in your company.
+
+Quality profile - this are set of rules created, which define what the quality of a code should be
+*proof of concept* -
+sand box - testing environment
+problem - bugs
+task - needed to resolve , inplementation of sonarqube
+action - brought in sonarqube to easily debug quality
+result - reduce down time, saved money, easy deployment and production
+
+You give4 users in sonarqube permission under Security --> Group permission
+Talisman a DevSecops tool
+Trive in Docker
+Sonarqube is a SAST too = Service application security tool
+kubesec - use to scab manifest file for best practices 
+kube Bench - gives you a benschmark of a secure cluster based on CIS standard
+Nexus - is used to store artifacts
+
+DOCKER 
+container is a way to package application with all the dependencies that the application needs to run.
+Unlike hypervisors, docker is not meant to virtualize and run different operating systen and kernels on the same hardware. The main Purpose for Docker is to package and contairize applications and to ship then to run them anywhere anytime, as many time as you want.
+
+*where do containers live
+container repository
+private repositories
+public repositories for 
+docker (DockerHub)
+
+before conatainer we install most of the service of the computer system, and you have to do many steps and something could go wrong. And it was a problem for developers.
+
+But with containers their is an isolated platform that allow us to install all the configurations. So you now have a docker image that you can use to run different containers. You can run same app with 2 differnts versions (mac,windows). 
+
+containers improved the working environment, it allowed the development and operation team to work together to work an apllication source code. 
+
+CONTAINER TECHNOLOGIES
+Docker
+containerD
+Cri-O
+
+Difference btw constainer and Image
+
+A container is a layer of images, mostly linux base image, because it is small in size
+Application on top
+container is the running environment of an image, it consist of applications and its dependences, it contains layer of images, it has its own abstract kernel.
+
+command "docker image"
+docker run <image name>
+
+docker compose.yml helps us to run multiple docker containers
+
+Commands 
+## create docker network
+docker network create mongo-network = creates a network mongo-network
+
+##start mongodb
+docker run -d \
+-p 27017:27017 \
+-e MONGO_INITDB_ROOT_USERNAME=admin \
+-E MONGO_INITDB_ROOT_PASSWORD=password
+
+
+You can create a docker repository in AWS using AWS ECR and push and push your image from your Docker terminal to AWS
+
+Dockerfile is a blue prints for building images and runing containers. The dockerfile has all the steps in a one script which makes it easy for you to run the containers just by runing the file. it is a text file it contains everything you need to build an image, it starts with a FROM
+node: 14-alpine  (node is the image, 14-alpine is the tag)
+
+Docker Volumes:
+docker volumes  are file systems mounted on docker container to preserve data generated by running a conatainer.
+Host volumes : 
+Anonymous Volume:
+Named Volume:
+volumes should be be in same line as server
+
+Docker is better than hypervisor because it has its own seperate environment, it is easily portable and data volumes can be shared among different containers, it has light weight and uses just one host kernel, it pulls only the files that it uses, unlike hypervisor that uses all necessary system resources to run.
+
+containerization is taken the application you need from one environment to another, using an consuming only the resources you need
+Containers are running instances of images that are isolated having their own environment instead of processes
+
+docker image is a package that contains artifacts that has configurations/dependencies for building applications and running containers. Docker images when run builds a docker contiainer and this images are made of docker files.
+An image is a package or template, just like a vm template that is used to create one or more containers.
+
+docker exec -it d3n6hsg7u888 = goes into a container
+docker run -d tesapp 1.1 = runing in detached mode
+docker ps
+docker ps -a = shows all images including exited
+docker run postgress:15.0 - pulls and start postgress
+docker rmi 5tt79shiiii = deleting a specific image
+docker images = shows all your images
+docker build -t testapp:1.5 
+docker run -p 6000:6379 -d redis :--> will use a host -p port of 6000: to run with a container port of :6379 in a -d detach mode
+
+docker run -p 6000:6379 -d --name redis-own-container redis:5.0 :->specifies my container name as redis-own-container
+
+docker logs 6hhgv890mmn : helps you view the logs of the container 
+
+but to enter a conatainer and view the log use
+docker exec -it 7473bhryg bash :-> to have a linux access to the conatainer, then you can run linux commands.
+"env" command allows you to see detailsof the container
+
+
+docker conatainer prune - deletes all containers
+. /app
+.
+RUN mkdir -p home/app
+COPY ./app /home/app
+
+JENKINS
+
+
+Jenkins is an open source tool use to build automation. It is a build automation tool
+What is Build Automation? build atomation automatically Run test(build tools need to be available), Build artifacts, publish artifacts, deploy artifacts and then sends notification.  
+What is Jenkins
+It is a software that you install on a dedicated server, has a UI for configuration. It install all the tools you need (Docker, gradle/ maven/ npm)
+configure task (run test,builds app, deploymen, etc)
+Test the code > build application > push automation > and deploy to server
+
+Things jenkins do:
+
+run test
+build artifacts
+publish artifacts
+deploy artifacts
+send notifications
+
+source code are commited in github, and that is where you can trigger new version from. Jenkins is configure with maven, nexus. when codes are commited the new versions are triggered in jenkins to pull the codes with the help of maven in buiilds, validate,test,deploy those codes, then sonarqube run the checks on the codes, before in is pushed to Nexus that serves as an artifactory.
+
+Jenkins use plugins to intergrate with other tools, so you installs plugins for the different tools you need to continue with your intergrtion and deployment
+
+how to install jenkins on ubuntu
+You can docker = sudo apt install docker.io 
+then add ubuntu to a docker group = sudo usermod -aG docker $USER
+Then docker pull jenkins
+so that way one can easily pull/run jenkins from docker hub
+
+docker run -d \
+> -p 8080:8080 \
+> -p 50000:50000 \
+> -v jenkins_home:/var/jenkins_home \
+> jenkins/jenkins:lts
+
+or 
+
+docker run -u 0 --privileged -d -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):/usr/bin/docker jenkins/jenkins:lts
+
+docker logs -f <contair ID>
+
+
+docker build command builds a docker image from a docker file
+
+
+jenkins master and worker node port 50000
+traditionally jenkins work on tomcat using port 8080, but you  can open the master to communicate with the slaves by opening port 50000
+
+I introduce a shiftleft security by implementing sonarqube to our CI/CD pipeline, it tracks every code and do quality check before it is being allowed into our environmrnt, to help prevent bugs/error in code. with that i was able to help the set a benchmark which detected vulnurabilities. It check for bugs, code smell, vulnerabilities and ensure it reaches the benchmark, before it is being pushed to Nexus where it is dockerized and all this are done using jenkins. And in jenkins we have a policy of zero trust ensuring no one else accesses the codes you are working on.
+
+A problem in production:
+i had a situation where a junior engineer dockerized and application and deploy it but it has an error so i got a notification that this applictaion was failing. when i checked the logs i realize that the junior engineer used a shell/sh format and has produce a child image instead of using an exe, i had to rewrite it in an exe format and make the app run as a parent process. After that, I had to hold a meeting to implement best practices to make sure other engineers compare docker files with OPTA test, it became a policy that every engineer must follow. The policy was documented in conference so that way it can easily be referenced, and with that we where able to eliminate that situation from re-occuring.
+
+we also utilize scanning tools to make sure that images that are stored in ECR or Docker or nexus are being scanned with tools like snyk/trivy , and are free from bugs and vulnerabilities. we ensure the version was updated from the depricated version
+
+prometeus and grafana
+promeateus = is a mononitoring tool to ensure you don't go above the your cpu or system usage. it captures your memory metices. it doesn't have a good visual interface. so it has to be configured with grafana so that way you can visually view your metrices
+
+diaradoc -is a security monitoring tool
+
+to configure a jenkins job to run at a specific time, jenkins is configured in such a way that it automatically pulls cod from github, build it with maven and then it uses sornaqube to run test to make sure it passes the benchmark put in place before it is being pushed to nexus.
+
+It is best practice to always use your jenkins slave instead of the master.
+
+DOCKER by freecodecamp.org
+
+What is one of your greatest achievement? 
+
+in one of my previous project i had a requirement to setup an end to end application stack, that includes various technologies, like a web server using node.js, and data base such as  mongoDB and a messaging system like reddis and an ochestration tool such as ansible. We encountered a lot of latency developing this application stack with all this different components. 
+
+First of all their compatibility with the underlying OS was an issue, we had to ensure that all this different services were compatible with the version of OS we were planning to use, they have been time when certain versions of this services were not compatible with the OS. And, in such situation we have to go back  and look at differnt os that was compatible with all of this different services. Secondly, we have to check the compatibility between the service and libraries and dependencies of the OS. we've had issues were one service requires one version of a dependent library whereas another service require another version. The architecture of our applications changes overtime and anytime. We had to upgrade to newer version of this components or change the database, and everytime something change we will have to go through this same process of checking compatibility between these various components and the underlying infracstructure. This compatibility matrix issue is usually refer to as the matrix from hell.
+
+Next, everytime we have a new developer on board we found it really dificult to setup a new environment, the new developers have to follow a large set of instruction and also run hundreds of commands to setup their environment. We have to makes sure they are using the right operating system and the right version of each of these components, and each developer have to set that up by themselves each time. We also had differrent development test and production environment. One developer maybe confortable using one OS,  and the other maybe confortable using amother one, and so, we couldn't guaranty the application we where building run thesame way in differnt environment. So all of this made our life in developing, building and shipping the applications really difficult. So I needed something that could help us with the compatibilty issue, something that will allow us to hange or modify this components without affecting the otrher components and even modifying the underlying operating sytem as required, and that serach landed me on Docker.
+
+With Docker I was able to run each components in a seperate container with its own dependencies and its own libraries all on thesame  vm and the OS but within seperate environment or Containers which i just have to build the docker configurations ones and all our developers could now get start up with a single "Docker run command" irrespective of the underlying Operating sytem they are on. All they needed to do was to make sure they have docker installed on their system.
+
+Can you tell what you Know about containers?
+Containers are completely Isolated enevironment, they can have their own processes or services, their own network interface, their own mounts, but at thesame time they all share the same OS kernel. Containers are running Images that have their own dependencies and libraries. These libraries are made up of differnt layers of images that are assembled by the builder.
+
+Before docker when the development team builds application they hand it over to the operation team  to deploy and manage it in operation environment. They only provide set of instructions such as information about how the host must be set up, prerequisites are to be installed on the host and how dependencies should be configured etc. since the team did not really develop their own the struggle on stting it up, and  if they encounter any difficulty they have to send it back to the development team for fixing, but with Docker the development team and the the operation team works hand-in-hand to transform the guide into a docker file with both of their environment, this docker file is now use to create a docker image, and this  image is guaranteed to work for both team, since this image was already working at the time the developer was building, it now makes it easy to deploy the application if the docker file is not modified.
+
+docker run -d --name webapp nginx:1.14-alpine = changes the name of nginx to webapp
+
+docker image prune: removes all dangling images.
+
+docker run -p 80:5000 nginx:1.4-alpine = is used to specify the port which the app runs. All traffic on port 80 on the local host will get routed to port 5000 on a local container.
+
+docker run -v /opt/datadir:/var/lib/mysql mysql = will transfer all the data in /var/lib/mysql mysql to /opt/datadir so that way when you delete the mysql container you can have your date saved in datadir
+
+docker inspect romantic_ardinghelli = the docker inspect command gives you full information about a container
+
+
+DEVOPS PROCESS :->
+
+When the developers commit codes in github/gilab, those codes are forked into a dev branch, DEV EnG are able to grab it into their own personal branch. Base on the UNit test cases commited by the developers, maven can be used manually or with automation through Jenkins to build those codes and run test based on the test unit. IT can be singularly deployed into a single tomcat server, OR with the use of Ansible via Jenkins into multiple tomcat servers at the same time. And those artifacts when built with jenkins are stored in a Nexus Artifactory Server. We implement best practices to check for code smell, code repetation, bugs and vulnerasbilities By Using SonarQube to define certain benchmark that this code must meet in order for it to be further deployed irrespective of the developers test cases, the goal is to meet our define code quality.
+
+docker exec -it -u 0 = to enter a container as a root user
+
+cat /etc/issue  => is used to view your linux distro/distribution
+
+docker exec -it 39090ac1ffbc /bin/sh = to log into bin and execute linux commands
+
+ubuntu@ip-172-31-50-73:~$ sudo usermod -aG docker $USER: adds ubuntu user into the docker group and gives it sudo privileges
+
+when run a jenkins image the 8080:8080 is used to communicate with the jenkins server, 50000:50000 is used to communicate between the master and the slave nodes.
+
+ubuntu@ip-172-31-50-73:~$ docker exec -it -u 0 7121029e5602 bash :=> use to log into docker as a root user
+root@7121029e5602:/# cat /etc/issue => how to know the type of linux root user you are (it helps to know what commands to use for downloads)
+
+ubuntu@ip-172-31-50-73:~$ docker exec -it 7121029e5602 bash => log into your container and execute linux commands.
+
+jenkins@7121029e5602:/$ ls /var/jenkins_home/  => after you log into your container this command help you list the content of jenkins directories
+
+jenkins@7121029e5602:/$ cat /var/jenkins_home/jobs/my-job/builds/1/log
+Started by user
+the above imput helps you see or cat the log of a certain build, in this case it is build one
+
+to transfer docker volume from ubunto to jenkins server, so that you can run docker commands use:
+
+docker run -d \
+ -p 8080:8080 \
+ -p 50000:50000 \
+ -v jenkins_home:/var/jenkins_home \
+ -v /var/run/docker.sock:/var/run/docker.sock \
+ -v $(which docker):/usr/bin/docker \
+ jenkins/jenkins:lts
+
+
+docker run -d \
+ -p 8080:8080 \
+ -p 50000:50000 \
+ -v jenkins_home:/var/jenkins_home \
+ -v /var/run/docker.sock:/var/run/docker.sock \
+ -v /var/lib/docker:/var/lib/docker \
+ -v $(which docker):/usr/bin/docker \
+ jenkins/jenkins:lts
+
+Pipeline job :
+
+pipeline job is written in groovy language
+
+multibranch pipeline
+-run test on every branch
+-execute 
+ Multibranch runs multiple branch at the same time. 
+ multibranch pipeline job allows you to add credentials. Which is only accessible within the multibranch pipeline.
+
+docker: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.32' not found (required by docker)
+docker: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by docker)
+
+curl => known as Client URL is a command line tooltht enables data transfer over various network protocols. It communicates with the web or applications server by specifying a relevant URL and the data that need to be sent.
+
+http://34.226.247.79:8080/env-vars.html/
+
+
+
+version 1.3.4 = major. minor.incremental(patch)
+
+Webhook is very important for jenkins automation.
+
+git remote add origin <ssh link from git> = will add you your local repo to a git repo
+
+to install node js use:
+
+curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
+
+apt-get install -y nodejs
+
+usermod -aG docker $USER = used to add an application to sudoer group
+
+docker build -t princewilln/new-app:1.0
+
+Amazon Web Service (AWS)
+
+EC2,S3,ElasticCache,ElasticKubenetes,IAM,RDS,Billing,Route53
+
+Identity and Access Management (IAM)
+
+manages access to AWS services and resources
+It determine WHO is allowed to acces services and resources
+Create and manages AWS users and groups
+Assign Policies and set permissions
+ROOT .....
+
+Iam user is an IAM entity that define a set of permission  for makin AWS services reqquest. Similar to a login user in an operating system like windows or Unix.
+
+
+The Iam user have permanent lonngterm credentials and is used to direct interact with AWZ services however IAM ...
+
+ECS = Elastic container server
+EKS = Elastic kubernetes service 
+
+I AM Roles
+
+create an I AM role instead of using and I AM role
+
+Virtual Private Cloud (VPC)
+Is a network in the cloud
+Internet Gateway: Is a protection that gives access or restrict access into the VPC
+3 Tiear application 
+
+SuBNET:
+
+Private subnet and public subnet
+
+Inernal IP address is for within the VPC network  and not for outside web traffic. You use public address for outside web traffic
+
+Internet gateway Controlling Access:
+
+NACL Is used to control on subnet level
+Security group is used on the instance level
+
+CIDR, subnet and subnetmask
+
+EC2 (amazon elastic compute cloud):
+
+https://github.com/bbachi/react-nodejs-example
+
+sudo service docker start = to start docker service
+
+Load Balancer : serves as a single point for clients
+
+Gateway Load Balancer: Gateway load Balancer allow you to deploy, scale, and manage virtual appliaces, such as firewalls, intrusion detection and prevenyion system, and packet inspection system.
+
+Apllication LB : makes routing decisions at the application layer (http/https) support pathbased routing and cam route request to one or more ports on each container instance. It is:
+
+Internet-facing and Internal Application LB
+
+Network LB : makes routing decision at the transport lay (TCP/SSL) It can handle millions of request per seconds
+
+Classic LB : makes routing decisions at either the
+ trasport layer or the app layer (HTTPS/HTTP). Classic load Balancers currently requires  a fixed realationship between the load balancer port and the container instance port.
+
+ This is Networking in AWS, is a very important concept, because it always comes in any cloud interview or devOps interview.Please if you don't understand please ask questions.Thanks
+Application Load balancer
+
+Works at the application layer(layer 7 of the OSI model,request level), flexible  and only provides the ability to route HTTP and HTTPS traffic based upon rules, host-based, or path based
+
+Examines the content of the HTTP(Hypertext Transfer Protocol seure), and can assure the availability of the application
+Network Load balancer
+
+This is the distribution of traffic based on network variables, such as IP address and destination ports. It is layer 4 (TCP) 
+
+
+Just forward request, as such cannot assure availability of the application
+
+Works at Transport layer(layer 4 of the OSI model, connection level), with static IP
+
+ Before LB you need a target group
+ TARGET GROUP: Helps redirect port
+
+ ROUTE53: is a high DNS service used to a.)register , b.)route internet to the resource sof the domain and to c.)check the health of the resource
+
+it can be routed in Public Hosted Zone (internet), and Private hosted zone
+ 
+ AWS CloudFormation (infrastructure as code) = helps you spend model and setup AWS resources do that you can spend less time managing those resources and more time focusing on you applications that run in AWS. You create a template that describes amm the AWS resources that you want(like AWS EC2 intances or VPC), and cloufornation takes care of provisioning and configuring those resources for you.
+
+ 3 Tier - created a vpc with an internet gate way and utilize multiple avl zone, in thsi zone i created my public and private subnet, 
+ load balancer that routes traffic evenly to my application to make sure we have consistent service running, in thesame way i used an auto scaler to scale traffic horizontally to ensure that we provide necessary resourses and traffic scales up and reduces to make sure resorces are properly utilized.
+ the auto scaler split the loads tp multiple instances and application running and this is based on the highest amd lowest limit that i set for my instaces to run
+
+ vertical scaling : here i ensure my memory/instance/CPU increase from one memory to a higher memory so that way it can handle the process.
+ I also ensured i have a cloud watch that is watching what is going on in the whole infracstructure to make it notice what is going on when the application goes down .......
+
+
+
+
+
+
+ once an instace is createds the auto scaling group helps reroute
+
+ EFS works with multiple instances/availability zone unlike the EBS that works only in a single availability zone
+
+ cloud front is used to ensure that traffics have proper proximity to the location of the request, it caches  a site in a closer location where it was requested to ensure it is easily/speedup when requeted
+
+ Nat gateway is use for egress communication, it allows resources in your private network to communicate with the public network
+
+ Bashon host/Jump box/ : is a pipline that allows you to ssh to access your application in a private subnet. its an EC2 intance created in a public subnet that ssh to connect with the private subnet to allow connection to the private subnet. bashon host also serve as a security to that control access to the private subnet. AWS Session manager is an upgrade of the bashon host, that AWS recently introduce to prevent over used and expoaure of ssh key. 
+
+
+
+AWS And Jenkins - Jenkins pipeline to deploy on AWS EC2
+
+what will you do if your build is failing, what will you do?
+
+Automating Deployment to AWS EC2 server using Jenkins.
+
+ sudo service docker start = to start docker service in linux
+ sudo usermod -aG docker $USER = adds user to the docker group, exit and relogin
+
+  git remote -v = helps you check your origin
+
+  Dynamic Versioning = can be used to automate application or image version. use stage ('incremental version') in jenkinsfile
+
+  Intergarting Jenkins with AWS:
+
+  Jenkkins have to be up and running, with aws SSH credentials intersgrated in it, for both servers to communicate. Then with a Jenkinsfile in your SCM (github) which is also intergrated with jenkings. With maven plugin intalled in jenkins, you can easily build the app.
+
+  AWS CLI
+
+  is a powerful command line tool
+  You can create ec2 instances using AWS CLI
+  aws ec2 a gives you commands you can use on it
+
+  s3 :
+
+  s3 bucket is craeted in a region and has a global unique name.
+
+  Databases in AWS:
+  ARORA - is a an AWS technology that provide postgress and mySQL datatbases. It is AWS cloud optimized nd ckaims 5x perfomance improvement over Mysql on RDS, 3x the perfomance of postgress RDS
+
+  Aurora storage grows in increments of 10gb upto 128 TB
+
+
+create a bug fix branch and do the fixes and send a pull request for a senior enginner to review before it is committed to the master branch. It most be thoroughly scanned and checked properly before accepted to the master branch. I ensured proper commit comments are used before pushing this coodes to the remotes repo. and when this sdev commit this codes Jeenkins with the help of MVN packages, mavin validate, test , package the codes to before they are finnally built. We also introduce a shift left security, when my manager was concerned aboout thwe bugfixes, and i was task to find a solution. so i installed sonarqube, to do quality profiling and quality gateway, quality profile ensure that developers meet the thrshold that is set in terms of avoiding duplicate lines, vulnerabilities, bugs ans code smell. so when does are dictated we get a notification that is trigerred by those treshold.
+
+we deal with both monolotic and micro services applications. I ensured Jenkins was set to pulled these artifacts with the help of dockefile and dockerizes these apps to dockerhub as images, we utilize light alpine images to save resources, we also utilize minimum run application. We ensure we use executable format to dockerrize this apps, and Ansible pull this apps to a privates dockehub and to avoid ansible from pulling this images to kubernetes clusters, we prevent it with the use osonarqube to ensure that this resources are properly scanned to ensure everything is in good shape before pushing them to.
+
+I worked with pipeline and multibranch pipeline, ensuring proper use of best practices and resources to ensure all this codes are bug free.
+
+I used terraform to provision an infracstructure in AWS and ensure I lock the DynamoDB database.
+
+*ansible play book*
+
+Alpine is one of the images of linux that makes your package light. 
+
+Jenkins file:
+
+start with your PIPELINE in the pipeline block you set you AGENT (use agent any when you don,t want any specific agent) in the agent block you can create your STAGES and the open a block and Create a STAGE declare the tool/plugin in the stage and open a stage block and include the STEP open a block and add GIT BRANCH: then specify the branch name and the repo URL: in thesame line. Close the block . I can now add a POST stage in same hirachy as STEP, this step you can declare an echo for SUCESS and FAILURE
+
+Maven is a tool used in building in the pipeline you can declare it as a global tool or within a stage
+
+Quality gate is a treshold that checks if codes meets the criteria that was set for it to proceed to production.
+*top vulnerability owasp*
+
+
+ c:\Windows\System32\drivers\etc\hosts
+
+ kubectl patch pv pv-for-rabbitmq -p '{"spec":{"claimRef": null}}' => 
+
+ Vpc for EKS Cluster:
+ https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-eks-vpc-private-subnets.yaml
+
+  aws eks update-kubeconfig --name=eks-cluster1   => will update an aws cluster eks-cluster1 as a new context for your system.
+
+  kubectl config get-contexts  => is used to check available context.
+
+  aws configure list => will show if your system has an aws configuration 
+
+  aws ec2 run-instances --image-id ami-09d3b3274b6c5d4aa --count 1 --instance-type t2.micro --key-name devops --security-group-ids sg-00df70a3a7d46d9e8 --subnet-id subnet-03a10c72d130fd81c  => is use to spin up an instance.
+
+  kubectl taint node <nod ID> distypr-   => will untaint the node.
+  
+  kubectl drain minikube --force --ignore-daemonsets --delete-emptydir-data => allows you to evict pods in minikube
+
+  TERRAFORM:
+  environmental var:
+  $ export TF_VAR_availability_zone="us-east-1b"  => export an environmrntal variable to your terminal
+
+  $ echo TF_VAR_availability_zone => will display the value on your terminal.
+
+  $ terraform import aws_default_security_group.default_sg sg-903004f8
+  => it is used to import security group from your console.
+
+ ssh -i id_rsa ec2-user@3.86.198.220
+
+ cat /etc/os-release => is used to check what os kernel/deamon you are running
+
+ DOCKER COMPOSE INSTALLATION
+
+  sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+  sudo chmod +x /usr/local/bin/docker-compose
+
+  docker-compose version
+
+in ubuntu us "sudo bash" to become a root user
+
+To paste a web file in ubuntu manually
+
+With ubuntu: cd var -> cd www -> paste your folder with the web file and deploy.
+
+
+2023
+
+
+#!/bin/bash -ex
+wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/DEV-AWS-MO-GCNv2/FlaskApp.zip
+unzip FlaskApp.zip
+cd FlaskApp/
+yum -y install python3-pip
+pip install -r requirements.txt
+yum -y install stress
+export PHOTOS_BUCKET=${SUB_PHOTOS_BUCKET}
+export AWS_DEFAULT_REGION=<INSERT REGION HERE>
+export DYNAMO_MODE=on
+FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80 
+
+
+
+
+
+
+#!/bin/bash -ex
+wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/DEV-AWS-MO-GCNv2/FlaskApp.zip
+unzip FlaskApp.zip
+cd FlaskApp/
+yum -y install python3 mysql
+pip3 install -r requirements.txt
+amazon-linux-extras install epel
+yum -y install stress
+export PHOTOS_BUCKET=${SUB_PHOTOS_BUCKET}
+export AWS_DEFAULT_REGION=<INSERT REGION HERE>
+export DYNAMO_MODE=on
+FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80
